@@ -1,0 +1,61 @@
+export const SEED_ITEMS = [
+  ['A0101', 'ARLOJI DC KALEP', 'ACC', 85000, 1],
+  ['A0102', 'ARLOJI ADIDAS', 'ACC', 90000, 1],
+  ['A0115', 'JAM TANGAN KOTAK', 'ACC', 65000, 2],
+  ['B0122', 'BANDO POLOS', 'ACC', 3000, 6],
+  ['B01142', 'BANDO POLOS', 'ACC', 28000, 2],
+  ['B01137', 'BANDO PITA', 'ACC', 8000, 0],
+  ['B0156', 'BANDO PITA', 'ACC', 8000, 6],
+  ['C0103', 'CERMIN SISIR 28', 'ACC', 12000, 5],
+  ['G01224', 'GANCI SWEET', 'ACC', 7000, 1],
+  ['G01106', 'GANCI PITA', 'ACC', 28000, 2],
+  ['G0140', 'GANCI SANRIO RIBBON', 'ACC', 9000, 3],
+  ['J0105', 'JEPIT RAMBUT MINI', 'ACC', 2500, 20],
+  ['K0101', 'KALUNG LOVE', 'ACC', 15000, 4],
+  ['N0109', 'NOTES KARAKTER MIX', 'ATK', 6000, 9],
+  ['P04102', 'CINCIN BUNGA LOVE', 'ACC', 5000, 1],
+  ['S0301', 'SISIR MINI DOUBLE', 'ACC', 4000, 24],
+  ['S0302', 'SISIR SERIT BESI', 'ACC', 5000, 9],
+  ['T0101', 'TISU POCKET', 'ATK', 1500, 303],
+  ['A0312', '1 SET KOTAK MAKAN 8500', 'MKN', 43000, 2],
+  ['L0101', 'LIP TINT PEACH', 'MAKE UP', 14000, 7],
+].map(([code, name, group, cost, stock]) => ({
+  code,
+  name,
+  group,
+  cost,
+  stock,
+  price: 0,
+  brand: 'NO MERK',
+}));
+
+export const INITIAL_HISTORY = [
+  {
+    id: 2,
+    type: 'Penyesuaian',
+    by: 'Dewi',
+    shift: 'Siang',
+    date: '19 Nov 2026',
+    status: 'Terkirim',
+    rows: [{ code: 'A0104', name: 'ARLOJI MAUVRE HITAM', qty: 2 }],
+  },
+  {
+    id: 1,
+    type: 'Barang Baru',
+    by: 'Rina',
+    shift: 'Pagi',
+    date: '19 Nov 2026',
+    status: 'Sudah di-import',
+    rows: [{ code: 'G01224', name: 'GANCI SWEET', qty: 6 }],
+  },
+];
+
+export const EMPTY_DRAFT_FORM = {
+  name: '',
+  type: 'ACC',
+  cost: '',
+  price: '',
+  qty: 1,
+  brand: 'NO MERK',
+  group: 'A01',
+};
